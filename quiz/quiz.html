@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Qual orquídea você seria?</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../quiz/style.css">
+</head>
+<body>
+	<div>
+		<h2>Qual orquídea você seria?</h2>
+	    <button><a href="../html/PROJETO OFICIAL.html">Voltar</a></button>
+	</div>
+
+	<div class="toolbar">
+		<span id="progress-text" aria-live="polite">Progresso: 0/5 respondidas</span>
+	</div>
+
+	<div class="progress" aria-hidden="true">
+		<div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+	</div>
+	<form id="teste">
+		<fieldset>
+			<legend>Qual cor você prefere?</legend>
+			<input type="radio" name="q1" value="catt">Rosa<br>
+			<input type="radio" name="q1" value="vanila">Amarelo<br>
+			<input type="radio" name="q1" value="choco">Verde<br>
+            <input type="radio" name="q1" value="boneca">Azul<br>
+            <input type="radio" name="q1" value="sapata">Roxo<br>
+            <input type="radio" name="q1" value="emo">Preto<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Qual a sua linguagem do amor?</legend>
+			<input type="radio" name="q2" value="boneca">Contato físico<br>
+			<input type="radio" name="q2" value="sapata">Presentes sentimentais<br>
+			<input type="radio" name="q2" value="choco">Cozinhar<br>
+			<input type="radio" name="q2" value="catt">Implicar<br>
+            <input type="radio" name="q2" value="vanila">Tempo de qualidade<br>
+            <input type="radio" name="q2" value="emo">Mensagens fofas<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>O que você mais gosta de fazer no tempo livre?</legend>
+			<input type="radio" name="q3" value="choco">Fazer lanchinhos<br>
+			<input type="radio" name="q3" value="emo">Escutar música<br>
+			<input type="radio" name="q3" value="vanila">Praticar esportes<br>
+            <input type="radio" name="q3" value="boneca">Ler livros<br>
+            <input type="radio" name="q3" value="sapata">Desenhar<br>
+            <input type="radio" name="q3" value="catt">Sair com os amigos<br>
+		</fieldset>
+
+        <fieldset>
+			<legend>Como você se descreveria em uma palavra?</legend>
+			<input type="radio" name="q4" value="sapata">Introvertida<br>
+			<input type="radio" name="q4" value="choco">Alegre<br>
+			<input type="radio" name="q4" value="vanila">Extrovertida<br>
+            <input type="radio" name="q4" value="boneca">Responsável<br>
+            <input type="radio" name="q4" value="catt">Vaidosa<br>		
+            <input type="radio" name="q4" value="emo">Expressiva<br>
+		</fieldset>
+
+        <fieldset>
+			<legend>Qual seu papel em um grupo de amigos?</legend>
+			<input type="radio" name="q5" value="emo">Observador e silencioso<br>
+			<input type="radio" name="q5" value="boneca">O Conselheiro<br>
+			<input type="radio" name="q5" value="vanila">O Animador<br>
+            <input type="radio" name="q5" value="catt">O intenso que todos procuram nos momentos difíceis<br>
+			<input type="radio" name="q5" value="sapata">O que sempre da ideias de rolê<br>
+			<input type="radio" name="q5" value="choco">O que sempre tem lanchinhos gostosos<br>
+		</fieldset>
+
+        <!-- continuar o js-->
+
+		<button type="submit">Enviar</button>
+		<button type="reset" id="btncancelar" onclick="cancelar()">Cancelar</button>
+	</form>
+
+	<div id="resul" class="result"></div>
+
+	<script src="../quiz/script.js"></script>
+</body>
+</html>
